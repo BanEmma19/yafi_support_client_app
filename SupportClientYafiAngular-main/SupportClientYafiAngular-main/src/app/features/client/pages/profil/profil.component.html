@@ -1,0 +1,54 @@
+<app-navbarclient></app-navbarclient>
+<br><br>
+<div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <div class="text-center">
+            <!-- <img src="https://i.pravatar.cc/150?img=3" class="rounded-circle mb-3" alt="Photo de profil" width="120" height="120">
+            <h4 class="fw-bold">Tchamagam glenn</h4>
+            <p class="text-muted">glennwouagam&#64;gmail.com</p> -->
+            <div class="profile-picture-wrapper">
+                <img
+                  [src]="imagePreview || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSA1zygA3rubv-VK0DrVcQ02Po79kJhXo_A&s'"
+                  alt="Photo de profil"
+                  class="profile-picture"
+                />
+              
+              
+                <!-- Icône de modification -->
+                <label for="fileInput" class="edit-icon">
+                  <i class="bi bi-pencil-fill"></i>
+                </label>
+                <input type="file" id="fileInput" (change)="onFileSelected($event)" hidden />
+              </div>
+              <h4 class="fw-bold">Tchamagam glenn</h4>
+              <p class="text-muted">glennwouagam&#64;gmail.com</p> 
+
+
+
+
+
+          </div>
+  
+          <hr>
+  
+          <div class="row mb-3">
+            <div class="col-sm-4 text-muted">Téléphone</div>
+            <div class="col-sm-8">+237 695465613</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4 text-muted">Ville</div>
+            <div class="col-sm-8">Douala</div>
+          </div>
+  
+          <!-- <div class="text-center mt-4">
+            <button class="btn btn-outline-primary px-4">Modifier le profil</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <app-footerclient></app-footerclient>
